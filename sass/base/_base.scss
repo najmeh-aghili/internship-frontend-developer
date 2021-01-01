@@ -1,0 +1,40 @@
+html {
+  font-size: 62.5%;
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+
+  @include respond(tab-lan) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-por) {
+    font-size: 50%;
+  }
+
+  @include respond(phone) {
+    font-size: 30%;
+  }
+}
+*,
+*::after,
+*::before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 2.5rem;
+
+  @include respond(tab-port) {
+    padding: 0px;
+  }
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
